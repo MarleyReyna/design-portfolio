@@ -1,0 +1,88 @@
+@keyframes slideDown{
+  0%{
+    transform: translateY(-500%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #FFF7F0;
+  overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.consultation{
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #FFF7F0;
+  border: none;
+  border-radius: 28px;
+  padding: .5rem 1.75rem .5rem 1.6875rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+button{
+  transition: background 300ms ease;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0 0;
+
+  img{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  button{
+    background: #030303;
+  }
+
+  button:hover{
+    background: #755CDE;
+  }
+}
+
+@media only screen and (min-width: 48rem){
+  .consultation{
+    font-size: 16px;
+    line-height: 28px;
+    padding: .875rem 2.8125rem;
+    border-radius: 28px;
+  }
+
+  .navbar{
+    img{
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 64rem){
+  .App{
+    padding: 0 2rem;
+  }
+}

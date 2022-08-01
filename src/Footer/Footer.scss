@@ -1,0 +1,105 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 100px;
+    padding: 0 1rem;
+
+    .book{
+        color: #FFF7F0;
+        text-align: center;
+        padding: 3.0625rem 1.5rem 3rem;
+        margin-bottom: 2.5rem;
+        border-radius: 10px;
+        background: #030303;
+
+        h5{
+            font-size: 26px;
+            line-height: 33px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500;
+            margin: 1.5rem 0;
+        }
+
+        button{
+            background: #EB7565;
+        }
+
+        button:hover{
+            background: #F6A560;
+        }
+    }
+
+    .navbar{
+        padding: 0 0 2rem;
+    }
+}
+
+@media only screen and (min-width: 48rem){
+    footer{
+        padding: 0 2.3475rem;
+        margin-top: 7.5rem;
+        max-width: 800px;
+        
+        .book{
+            margin-bottom: 3.5rem;
+            padding: 3.5rem 4.625rem 4rem;
+
+            h5{
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 28px;
+                margin: 1.625rem 0;
+            }
+        }
+
+        .navbar{
+            padding-bottom: 3.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 64rem){
+    footer{
+        padding: 0;
+        max-width: 69.375rem;
+        margin-top: 5.5rem;
+        
+        .book{
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 5.0625rem 5.9375rem 5rem 4.0625rem;
+
+            div{
+               max-width: 33.75rem;
+
+               h5{
+                font-size: 40px;
+                line-height: 50px;
+               }
+
+               p{
+                margin: 1.5625rem 0 0;
+               }
+            }
+        }
+
+        .navbar{
+            padding-bottom: 4rem;
+        }
+    }
+}
