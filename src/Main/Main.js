@@ -59,10 +59,16 @@ const Main = () => {
         </div>
         <div className="slide-buttons">
           <button onClick={() => setSlide((c) => c - 1)}>
-            <img src={"/assets/icon-arrow-left.svg"} alt="" />
+            <img
+              src={"/assets/icon-arrow-left.svg"}
+              alt="Move backwards in photo gallery"
+            />
           </button>
           <button onClick={() => setSlide((c) => c + 1)}>
-            <img src={"/assets/icon-arrow-right.svg"} alt="" />
+            <img
+              src={"/assets/icon-arrow-right.svg"}
+              alt="Move forwards in photo gallery"
+            />
           </button>
         </div>
       </section>
